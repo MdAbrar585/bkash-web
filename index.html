@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <h1 style="text-align:center; font-size:50px; color:rgb(17, 16, 16)">Modal Popup Box Login Form</h1> -->
+
+    <button class="main-btn" onclick="document.getElementById('modal-wrapper').style.display='block'"
+        style="width:200px; margin-top:200px; margin-left:160px;">
+        Open Popup</button>
+
+    <div id="modal-wrapper" class="modal">
+
+        <form class="modal-content animate">
+
+            <div class="imgcontainer">
+                <!-- <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close"
+                    title="Close PopUp">&times;</span> -->
+                <img src="2.png" alt="Avatar">
+                <!-- <h1 style="text-align:center">Modal Popup Box</h1> -->
+            </div>
+            <div class="marchent">
+                <p>Marchant : SSLCOMMERZ</p>
+                <p>INVOICE no : BGW788420200213376666</p>
+                <p> AMOUNT : BDT 4500.00</p>
+            </div>
+
+            <div class="inputbox">
+                <p>Your bkash account number</p>
+                <input class="phoneInput" type="text" name="" id="" placeholder="e.g 01XXXXXXXXX">
+               <br> <input type="checkbox"> <span> I agree to the <a href="#">terms and conditions</a></span>
+                <div class="container">
+                    <button class="btn-custom">PROCEED</button>
+                    <button id="close" title="Close PopUp" class="btn-custom">CLOSE</button>
+                </div>
+                <p class="helpline"><i class="fa fa-phone">16247</i></p>
+            </div>
+
+
+        </form>
+
+    </div>
+
+    <script>
+        // If user clicks anywhere outside of the modal, Modal will close
+
+        var modal = document.getElementById('modal-wrapper');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        const closeButton = document.getElementById("close");
+        closeButton.addEventListener("click",function(){
+            document.getElementById("modal-wrapper").style.display = "block";
+            // console.log("hi");
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+.phoneInput{
+    border-radius: 10px;
+}
+/* Set a style for all buttons */
+.main-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    font-size: 15px;
+}
+.main-btn:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    /* text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative; */
+    background-color: white;
+    margin-top: 10px;
+    height: 125px;
+}
+.imgcontainer img{
+    width: 100%;
+    margin-top: -25px;
+}
+.marchent{
+    border: 1px solid;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px black;
+    margin: 20px 20px;
+    padding:20px;
+    text-align: center;
+    color: white;
+    background-color: #AC2640;
+    font-weight: 500;
+    line-height: normal;
+}
+.inputbox{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+.inputbox input{
+    margin-top: -10px;
+}
+.btn-custom{
+    background-color: rgba(0, 0, 0, 0.164);
+    border: none;
+    border-top: 2px solid rgba(211, 211, 211, 0.452);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    
+    cursor: pointer;
+    width: 30%;
+    font-size: 15px;
+}
+.btn-custom:hover{
+    opacity: 0.8;
+}
+.helpline{
+    margin-top: 20px;
+    margin-bottom: -17px;
+    font-weight: 300;
+}
+
+/* The Modal (background) */
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-image: linear-gradient(to top,#B4468C,#9a0500);
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+	padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
